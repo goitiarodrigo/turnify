@@ -10,6 +10,9 @@ import type { AuthStackParamList } from '@/types/navigation';
 
 // Import screens
 import { View, Text } from 'react-native';
+import SplashScreen from '@/screens/auth/SplashScreen';
+import OnboardingScreen from '@/screens/auth/OnboardingScreen';
+import OptionalLoginScreen from '@/screens/auth/OptionalLoginScreen';
 import LoginScreen from '@/screens/auth/LoginScreen';
 import RegisterScreen from '@/screens/auth/RegisterScreen';
 import ForgotPasswordScreen from '@/screens/auth/ForgotPasswordScreen';
@@ -17,24 +20,6 @@ import ForgotPasswordScreen from '@/screens/auth/ForgotPasswordScreen';
 // ============================================================================
 // PLACEHOLDER SCREENS (TODO: Implement these)
 // ============================================================================
-
-const SplashScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Splash Screen</Text>
-  </View>
-);
-
-const OnboardingScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Onboarding Screen</Text>
-  </View>
-);
-
-const OptionalLoginScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Optional Login Screen</Text>
-  </View>
-);
 
 const ResetPasswordScreen = () => (
   <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
