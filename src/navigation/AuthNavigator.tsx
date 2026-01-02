@@ -8,12 +8,14 @@ import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import type { AuthStackParamList } from '@/types/navigation';
 
-// Import screens (these will be created later)
-// For now, we'll use placeholder components
+// Import screens
 import { View, Text } from 'react-native';
+import LoginScreen from '@/screens/auth/LoginScreen';
+import RegisterScreen from '@/screens/auth/RegisterScreen';
+import ForgotPasswordScreen from '@/screens/auth/ForgotPasswordScreen';
 
 // ============================================================================
-// PLACEHOLDER SCREENS (Replace with actual screens when created)
+// PLACEHOLDER SCREENS (TODO: Implement these)
 // ============================================================================
 
 const SplashScreen = () => (
@@ -31,24 +33,6 @@ const OnboardingScreen = () => (
 const OptionalLoginScreen = () => (
   <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
     <Text>Optional Login Screen</Text>
-  </View>
-);
-
-const LoginScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Login Screen</Text>
-  </View>
-);
-
-const RegisterScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Register Screen</Text>
-  </View>
-);
-
-const ForgotPasswordScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Forgot Password Screen</Text>
   </View>
 );
 

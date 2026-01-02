@@ -10,106 +10,31 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import type { PatientStackParamList, PatientTabParamList } from '@/types/navigation';
 import { useTheme } from '@/context/ThemeContext';
 
-// Import screens (placeholders for now)
+// Import screens
 import { View, Text } from 'react-native';
+import HomeScreen from '@/screens/patient/HomeScreen';
+import SearchScreen from '@/screens/patient/SearchScreen';
+import ClinicDetailScreen from '@/screens/patient/ClinicDetailScreen';
+import ProfessionalDetailScreen from '@/screens/patient/ProfessionalDetailScreen';
+import BookAppointmentScreen from '@/screens/patient/BookAppointmentScreen';
+import JoinQueueScreen from '@/screens/patient/JoinQueueScreen';
+import QueueTrackingScreen from '@/screens/patient/QueueTrackingScreen';
+import AppointmentsListScreen from '@/screens/patient/AppointmentsListScreen';
+import AppointmentDetailScreen from '@/screens/patient/AppointmentDetailScreen';
+import ProfileScreen from '@/screens/patient/ProfileScreen';
+import EditProfileScreen from '@/screens/patient/EditProfileScreen';
+import SettingsScreen from '@/screens/patient/SettingsScreen';
+import NotificationsScreen from '@/screens/patient/NotificationsScreen';
+import PaymentMethodsScreen from '@/screens/patient/PaymentMethodsScreen';
+import WriteReviewScreen from '@/screens/patient/WriteReviewScreen';
 
 // ============================================================================
-// PLACEHOLDER SCREENS
+// PLACEHOLDER SCREENS (TODO: Implement these)
 // ============================================================================
-
-const HomeScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Home Screen</Text>
-  </View>
-);
-
-const AppointmentsScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Appointments Screen</Text>
-  </View>
-);
 
 const QueueTabScreen = () => (
   <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
     <Text>Queue Tab Screen</Text>
-  </View>
-);
-
-const ProfileScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Profile Screen</Text>
-  </View>
-);
-
-const SearchScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Search Screen</Text>
-  </View>
-);
-
-const ClinicDetailScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Clinic Detail Screen</Text>
-  </View>
-);
-
-const ProfessionalDetailScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Professional Detail Screen</Text>
-  </View>
-);
-
-const BookAppointmentScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Book Appointment Screen</Text>
-  </View>
-);
-
-const AppointmentDetailScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Appointment Detail Screen</Text>
-  </View>
-);
-
-const JoinQueueScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Join Queue Screen</Text>
-  </View>
-);
-
-const QueueTrackingScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Queue Tracking Screen</Text>
-  </View>
-);
-
-const NotificationsScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Notifications Screen</Text>
-  </View>
-);
-
-const EditProfileScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Edit Profile Screen</Text>
-  </View>
-);
-
-const PaymentMethodsScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Payment Methods Screen</Text>
-  </View>
-);
-
-const SettingsScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Settings Screen</Text>
-  </View>
-);
-
-const WriteReviewScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Write Review Screen</Text>
   </View>
 );
 
@@ -157,7 +82,7 @@ const PatientTabs: React.FC = () => {
 
       <Tab.Screen
         name="Appointments"
-        component={AppointmentsScreen}
+        component={AppointmentsListScreen}
         options={{
           tabBarLabel: 'Appointments',
           // tabBarIcon: ({ color, size }) => <CalendarIcon color={color} size={size} />,
