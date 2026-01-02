@@ -10,18 +10,18 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import type { PatientStackParamList, PatientTabParamList } from '@/types/navigation';
 import { useTheme } from '@/context/ThemeContext';
 
-// Import screens (placeholders for now)
+// Import screens
 import { View, Text } from 'react-native';
+import HomeScreen from '@/screens/patient/HomeScreen';
+import SearchScreen from '@/screens/patient/SearchScreen';
+import ClinicDetailScreen from '@/screens/patient/ClinicDetailScreen';
+import ProfessionalDetailScreen from '@/screens/patient/ProfessionalDetailScreen';
+import BookAppointmentScreen from '@/screens/patient/BookAppointmentScreen';
+import QueueTrackingScreen from '@/screens/patient/QueueTrackingScreen';
 
 // ============================================================================
-// PLACEHOLDER SCREENS
+// PLACEHOLDER SCREENS (TODO: Implement these)
 // ============================================================================
-
-const HomeScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Home Screen</Text>
-  </View>
-);
 
 const AppointmentsScreen = () => (
   <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
@@ -41,30 +41,6 @@ const ProfileScreen = () => (
   </View>
 );
 
-const SearchScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Search Screen</Text>
-  </View>
-);
-
-const ClinicDetailScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Clinic Detail Screen</Text>
-  </View>
-);
-
-const ProfessionalDetailScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Professional Detail Screen</Text>
-  </View>
-);
-
-const BookAppointmentScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Book Appointment Screen</Text>
-  </View>
-);
-
 const AppointmentDetailScreen = () => (
   <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
     <Text>Appointment Detail Screen</Text>
@@ -74,12 +50,6 @@ const AppointmentDetailScreen = () => (
 const JoinQueueScreen = () => (
   <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
     <Text>Join Queue Screen</Text>
-  </View>
-);
-
-const QueueTrackingScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Queue Tracking Screen</Text>
   </View>
 );
 

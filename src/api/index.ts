@@ -16,6 +16,8 @@ import apiClient, {
 import appointmentsAPI from './endpoints/appointments';
 import notificationsAPI from './endpoints/notifications';
 import paymentsAPI from './endpoints/payments';
+import clinicsAPI from './endpoints/clinics';
+import professionalsAPI from './endpoints/professionals';
 
 // ============================================================================
 // AUTH API (from AuthService but exposed for direct use)
@@ -64,6 +66,8 @@ export {
   appointmentsAPI,
   notificationsAPI,
   paymentsAPI,
+  clinicsAPI,
+  professionalsAPI,
 };
 
 // Export types
@@ -92,6 +96,16 @@ export type {
   RefundData,
 } from './endpoints/payments';
 
+export type {
+  ClinicFilters,
+  NearbyParams,
+} from './endpoints/clinics';
+
+export type {
+  ProfessionalFilters,
+  AvailabilityParams,
+} from './endpoints/professionals';
+
 // ============================================================================
 // CONVENIENCE API OBJECT
 // ============================================================================
@@ -105,4 +119,6 @@ export const api = {
   appointments: appointmentsAPI,
   notifications: notificationsAPI,
   payments: paymentsAPI,
+  clinics: clinicsAPI,
+  professionals: professionalsAPI,
 };
