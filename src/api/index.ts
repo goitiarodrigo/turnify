@@ -18,6 +18,7 @@ import notificationsAPI from './endpoints/notifications';
 import paymentsAPI from './endpoints/payments';
 import clinicsAPI from './endpoints/clinics';
 import professionalsAPI from './endpoints/professionals';
+import queueAPI from './endpoints/queue';
 
 // ============================================================================
 // AUTH API (from AuthService but exposed for direct use)
@@ -68,6 +69,7 @@ export {
   paymentsAPI,
   clinicsAPI,
   professionalsAPI,
+  queueAPI,
 };
 
 // Export types
@@ -106,6 +108,12 @@ export type {
   AvailabilityParams,
 } from './endpoints/professionals';
 
+export type {
+  QueueFilters,
+  UpdateLocationData,
+  UpdateStatusData,
+} from './endpoints/queue';
+
 // ============================================================================
 // CONVENIENCE API OBJECT
 // ============================================================================
@@ -121,4 +129,5 @@ export const api = {
   payments: paymentsAPI,
   clinics: clinicsAPI,
   professionals: professionalsAPI,
+  queue: queueAPI,
 };

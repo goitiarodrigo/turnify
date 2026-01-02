@@ -17,6 +17,7 @@ import SearchScreen from '@/screens/patient/SearchScreen';
 import ClinicDetailScreen from '@/screens/patient/ClinicDetailScreen';
 import ProfessionalDetailScreen from '@/screens/patient/ProfessionalDetailScreen';
 import BookAppointmentScreen from '@/screens/patient/BookAppointmentScreen';
+import JoinQueueScreen from '@/screens/patient/JoinQueueScreen';
 import QueueTrackingScreen from '@/screens/patient/QueueTrackingScreen';
 
 // ============================================================================
@@ -47,11 +48,6 @@ const AppointmentDetailScreen = () => (
   </View>
 );
 
-const JoinQueueScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Join Queue Screen</Text>
-  </View>
-);
 
 const NotificationsScreen = () => (
   <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
