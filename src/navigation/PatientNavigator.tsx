@@ -19,16 +19,12 @@ import ProfessionalDetailScreen from '@/screens/patient/ProfessionalDetailScreen
 import BookAppointmentScreen from '@/screens/patient/BookAppointmentScreen';
 import JoinQueueScreen from '@/screens/patient/JoinQueueScreen';
 import QueueTrackingScreen from '@/screens/patient/QueueTrackingScreen';
+import AppointmentsListScreen from '@/screens/patient/AppointmentsListScreen';
+import AppointmentDetailScreen from '@/screens/patient/AppointmentDetailScreen';
 
 // ============================================================================
 // PLACEHOLDER SCREENS (TODO: Implement these)
 // ============================================================================
-
-const AppointmentsScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Appointments Screen</Text>
-  </View>
-);
 
 const QueueTabScreen = () => (
   <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
@@ -39,12 +35,6 @@ const QueueTabScreen = () => (
 const ProfileScreen = () => (
   <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
     <Text>Profile Screen</Text>
-  </View>
-);
-
-const AppointmentDetailScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Appointment Detail Screen</Text>
   </View>
 );
 
@@ -123,7 +113,7 @@ const PatientTabs: React.FC = () => {
 
       <Tab.Screen
         name="Appointments"
-        component={AppointmentsScreen}
+        component={AppointmentsListScreen}
         options={{
           tabBarLabel: 'Appointments',
           // tabBarIcon: ({ color, size }) => <CalendarIcon color={color} size={size} />,
