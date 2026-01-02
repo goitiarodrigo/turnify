@@ -1,17 +1,25 @@
 {
-  "extends": "expo/tsconfig.base",
   "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "lib": ["es2019"],
+    "jsx": "react-native",
     "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "baseUrl": "./src",
     "paths": {
-      "@/*": [
-        "./*"
-      ]
+      "@/*": ["./*"],
+      "@components/*": ["components/*"],
+      "@screens/*": ["screens/*"],
+      "@api/*": ["api/*"],
+      "@store/*": ["store/*"],
+      "@utils/*": ["utils/*"],
+      "@constants/*": ["constants/*"],
+      "@types/*": ["types/*"]
     }
   },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    ".expo/types/**/*.ts",
-    "expo-env.d.ts"
-  ]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }
