@@ -21,6 +21,12 @@ import JoinQueueScreen from '@/screens/patient/JoinQueueScreen';
 import QueueTrackingScreen from '@/screens/patient/QueueTrackingScreen';
 import AppointmentsListScreen from '@/screens/patient/AppointmentsListScreen';
 import AppointmentDetailScreen from '@/screens/patient/AppointmentDetailScreen';
+import ProfileScreen from '@/screens/patient/ProfileScreen';
+import EditProfileScreen from '@/screens/patient/EditProfileScreen';
+import SettingsScreen from '@/screens/patient/SettingsScreen';
+import NotificationsScreen from '@/screens/patient/NotificationsScreen';
+import PaymentMethodsScreen from '@/screens/patient/PaymentMethodsScreen';
+import WriteReviewScreen from '@/screens/patient/WriteReviewScreen';
 
 // ============================================================================
 // PLACEHOLDER SCREENS (TODO: Implement these)
@@ -29,43 +35,6 @@ import AppointmentDetailScreen from '@/screens/patient/AppointmentDetailScreen';
 const QueueTabScreen = () => (
   <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
     <Text>Queue Tab Screen</Text>
-  </View>
-);
-
-const ProfileScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Profile Screen</Text>
-  </View>
-);
-
-
-const NotificationsScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Notifications Screen</Text>
-  </View>
-);
-
-const EditProfileScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Edit Profile Screen</Text>
-  </View>
-);
-
-const PaymentMethodsScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Payment Methods Screen</Text>
-  </View>
-);
-
-const SettingsScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Settings Screen</Text>
-  </View>
-);
-
-const WriteReviewScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Write Review Screen</Text>
   </View>
 );
 
